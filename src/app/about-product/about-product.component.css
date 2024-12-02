@@ -1,0 +1,308 @@
+/* Container styling */
+.bg-image {
+  background-image: url('src/assets/images/bg-blue.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 556px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: rgba(40, 64, 104, 1);
+  width:393px;
+  height:112px;
+  padding: var(--xl) var(--xxl) var(--xl) var(--xxl);
+  gap: 0px;
+  border-radius: var(--s);
+  justify-content: space-between;
+  opacity: 0px;
+
+}
+.btn-light {
+  background-color: rgba(255, 255, 255, 1);
+  width:393px;
+  height:112px;
+  padding: var(--xl) var(--xxl) var(--xl) var(--xxl);
+  gap: 0px;
+  border-radius: var(--s);
+  justify-content: space-between;
+  opacity: 0px;
+}
+
+.value-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons styling */
+.button-container .btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blue {
+  background-color: rgba(40, 64, 104, 1);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.white {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.button-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Loya Container */
+.loya-container {
+  width: 368px;
+  padding: 20px;
+  gap: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loya-header h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.loya-description p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #000000;
+}
+
+/* CTA Button */
+.cta-button {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+/* Icon Container */
+.icon-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container i {
+  font-size: 48px;
+  color: #555;
+}
+
+.container-icon {
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  transform: rotate(-4.07deg);
+}
+
+.first {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.first p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.first h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.first i {
+  font-size: 24px;
+  color: #333;
+}
+
+
+/* second */
+.value-header {
+  margin-bottom: 20px;
+}
+
+.bg-image {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.button-container .btn {
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.loya-container,
+.reppoo-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.loya-container h3,
+.reppoo-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+.span i {
+  text-align: end;
+}
+
+.first {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-left: 338px;
+  width: 242px;
+  height: 89px;
+  z-index: 1000;
+}
+
+/* new code */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Optional: Center the cards vertically */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 688px;
+  /* Set a fixed width */
+  min-height: 400px;
+  /* Set a minimum height for uniformity */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.container-icon {
+  height: 60px;
+  /* Placeholder for icons */
+  width: 60px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.icon-grid {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.icon-container i {
+  font-size: 24px;
+  color: #333;
+}
+
+.loya-description {
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.cta-button {
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Hide function button both  */
+/* Hide LOYA and Reppoo buttons on mobile (small screens) */
+@media (max-width: 768px) {
+  .loyas {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-container btn {
+    display: none !important;
+  }
+
+  .col-md-6 {
+    display: block !important;
+  }
+}
+
+/* Display both cards on mobile view */
+@media (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Add some spacing between the cards */
+  }
+
+  .card {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,142 @@
+<div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white shadow-sm sticky-top py-2" [class.scrolled]="isScrolled">
+        <div class="container-fluid py-2">
+            <!-- Left Side Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="KANLAS TECH Logo" width="150" />
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="d-none d-lg-flex align-items-center">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 py-2" href="#">Home</a>
+                    </li>
+                
+                    <!-- Products Dropdown -->
+                    <!-- Products Dropdown -->
+<li class="nav-item dropdown" [class.show]="isProductsDropdownOpen">
+    <a
+      class="nav-link mx-2 py-2 dropdown-toggle"
+      href="#"
+      (click)="toggleDropdown('products', $event)"
+      role="button"
+      [attr.aria-expanded]="isProductsDropdownOpen"
+    >
+      Products
+    </a>
+    <ul class="dropdown-menu" [class.show]="isProductsDropdownOpen">
+      <li><a class="dropdown-item" href="#">Product 1</a></li>
+      <li><a class="dropdown-item" href="#">Product 2</a></li>
+      <li><a class="dropdown-item" href="#">Product 3</a></li>
+    </ul>
+  </li>
+  
+  <!-- Solutions Dropdown -->
+  <li class="nav-item dropdown" [class.show]="isSolutionsDropdownOpen">
+    <a
+      class="nav-link mx-2 py-2 dropdown-toggle"
+      href="#"
+      (click)="toggleDropdown('solutions', $event)"
+      role="button"
+      [attr.aria-expanded]="isSolutionsDropdownOpen"
+    >
+      Solutions
+    </a>
+    <ul class="dropdown-menu" [class.show]="isSolutionsDropdownOpen">
+      <li><a class="dropdown-item" href="#">Solution 1</a></li>
+      <li><a class="dropdown-item" href="#">Solution 2</a></li>
+      <li><a class="dropdown-item" href="#">Solution 3</a></li>
+    </ul>
+  </li>
+  
+  <!-- Resources Dropdown -->
+  <li class="nav-item dropdown" [class.show]="isResourcesDropdownOpen">
+    <a
+      class="nav-link mx-2 py-2 dropdown-toggle"
+      href="#"
+      (click)="toggleDropdown('resources', $event)"
+      role="button"
+      [attr.aria-expanded]="isResourcesDropdownOpen"
+    >
+      Resources
+    </a>
+    <ul class="dropdown-menu" [class.show]="isResourcesDropdownOpen">
+      <li><a class="dropdown-item" href="#">Resource 1</a></li>
+      <li><a class="dropdown-item" href="#">Resource 2</a></li>
+      <li><a class="dropdown-item" href="#">Resource 3</a></li>
+    </ul>
+  </li>
+  
+  <!-- Our Company Dropdown -->
+  <li class="nav-item dropdown" [class.show]="isCompanyDropdownOpen">
+    <a
+      class="nav-link mx-2 py-2 dropdown-toggle"
+      href="#"
+      (click)="toggleDropdown('company', $event)"
+      role="button"
+      [attr.aria-expanded]="isCompanyDropdownOpen"
+    >
+      Our Company
+    </a>
+    <ul class="dropdown-menu" [class.show]="isCompanyDropdownOpen">
+      <li><a class="dropdown-item" href="#">About Us</a></li>
+      <li><a class="dropdown-item" href="#">Careers</a></li>
+      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+    </ul>
+  </li>
+  
+                </ul>
+                <button class="btn btn-dark ms-3">
+                    <i class="ri-send-plane-fill"></i> Reach Us
+                </button>
+            </div>
+
+            <!-- Toggler Button for Mobile -->
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                (click)="toggleNavbar()"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" [ngClass]="{ 'open': isNavbarOpen }">
+        <div class="sidebar-header d-flex justify-content-between align-items-center">
+            <h5 class="m-0">Menu</h5>
+            <button class="btn-close" (click)="toggleNavbar()" aria-label="Close">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Solutions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Our Company</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-dark mt-3">
+                    <i class="ri-send-plane-fill"></i> Reach Us
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Backdrop -->
+    <div class="backdrop" [ngClass]="{ 'show': isNavbarOpen }" (click)="toggleNavbar()"></div>
+</div>

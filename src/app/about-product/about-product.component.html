@@ -1,0 +1,82 @@
+<div class="value-header flex-dir text-center">
+    <p>How can we benefit you?</p>
+    <h1>About Our Products</h1>
+</div>
+
+<div class="container bg-image py-5">
+    <div class="row align-items-center">
+        <!-- Left Side Buttons (Visible only on larger screens) -->
+        <div class="col-md-6 d-flex flex-column align-items-start" *ngIf="isLargeScreen">
+            <div class="button-container d-flex flex-column align-items-start me-4">
+                <button class="btn mb-3 d-flex align-items-center loyas"
+                        [ngClass]="{ 'btn-primary': activeCard === 'loya', 'btn-light': activeCard !== 'loya' }"
+                        (click)="showCard('loya')">
+                    <i class="bi bi-arrow-right me-2"></i> LOYA
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+                <button class="btn mb-3 d-flex align-items-center reppoo"
+                        [ngClass]="{ 'btn-primary': activeCard === 'reppoo', 'btn-light': activeCard !== 'reppoo' }"
+                        (click)="showCard('reppoo')">
+                    <i class="bi bi-arrow-right me-2"></i> Reppoo
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </div>
+        
+        
+        
+
+        <!-- Right Side Cards -->
+        <div class="col-md-6">
+            <!-- <div class="first rounded border flex-column">
+                <div class="first1">
+                    <p>Our Guiding Principle</p>
+                    <h6>Customer First</h6>
+                </div>
+                <div class="first2">
+                    <i class="ri-emotion-laugh-fill"></i>
+                </div>
+            </div> -->
+
+            <!-- LOYA Card -->
+            <div class="card-container">
+                <div *ngIf="activeCard === 'loya'" class="card loya-container">
+                    <div class="loya-header text-left">
+                        <h3>LOYA</h3>
+                    </div>
+                    <div class="icon-grid row">
+                        <div class="col-6 col-md-4 d-flex justify-content-center mb-3" *ngFor="let icon of icons">
+                            <div class="icon-container">
+                                <i [class]="icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loya-description">
+                        <p>A short description about the LOYA product and what it does in order to direct the user
+                            towards the CTA.</p>
+                    </div>
+                    <button class="btn btn-dark cta-button">Learn More</button>
+                </div>
+
+                <!-- Reppoo Card -->
+                <div *ngIf="activeCard === 'reppoo'" class="card reppoo-container">
+                    <div class="Reppoo-header text-left">
+                        <h3>Reppoo</h3>
+                    </div>
+                    <div class="icon-grid row">
+                        <div class="col-6 col-md-4 d-flex justify-content-center mb-3" *ngFor="let icon of Reppoo">
+                            <div class="icon-container">
+                                <i [class]="icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loya-description">
+                        <p>A short description about the Reppoo product and what it does in order to direct the user
+                            towards the CTA.</p>
+                    </div>
+                    <button class="btn btn-dark cta-button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

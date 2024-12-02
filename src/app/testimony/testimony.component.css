@@ -1,0 +1,204 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #606060;
+}
+
+.value-card {
+    margin-bottom: 100px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 24px;
+    border: 1px solid var(--COLORS-Neutral-400, #BBBBBB);
+    width: 786px;
+    height: 330px;
+    margin: auto;
+}
+
+
+.card .child:first-child {
+    width: 290px;
+    border-radius: 12px;
+}
+
+.card .child:nth-child(2) {
+    width: 370px;
+    height: 298px;
+    border-radius: 12px;
+    border: 1px solid var(--COLORS-Neutral-200, #E8E8E8)
+}
+
+.child-box-2 {
+    height: 74px;
+    border-radius: 12px;
+    padding-left: 8px;
+    border: 1px solid var(--COLORS-Neutral-200, #E8E8E8)
+}
+
+
+.left-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.right-section {
+    flex: 2;
+    padding: 10px;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section,
+    .right-section {
+        padding: 5px;
+    }
+
+    .quote-icon {
+        font-size: 2rem;
+    }
+}
+
+
+i {
+    font-size: 24px;
+    color: #6c757d;
+}
+
+.value-card {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.value-card img {
+    max-width: 100%;
+    /* Ensures images scale properly */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+.carousel-indicators button.active {
+    background-color: #000;
+}
+.value-card img {
+    max-width: 84%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .value-card img {
+        max-width: 9%;
+        height: auto;
+    }
+}
+.responsive-text h5 {
+    font-size: 1.25rem; 
+    line-height: 1.5; 
+  }
+  
+  .responsive-text p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+  }
+  
+  .responsive-text i {
+    color: #6c757d; 
+  }
+  /* new */
+  /* Make sure the carousel items and cards stack properly on smaller screens */
+@media (max-width: 768px) {
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card img {
+        max-width: 80%;
+    }
+
+    /* Center the quote and description section */
+    .responsive-text {
+        text-align: center;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 1.5rem;
+    }
+}
+
+/* Larger screens - display cards side by side */
+@media (min-width: 768px) {
+    .carousel-item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .responsive-text {
+        text-align: left;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 2rem;
+    }
+}

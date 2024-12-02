@@ -1,0 +1,250 @@
+.container-body {
+  background: linear-gradient(180deg, rgba(75, 118, 186, 0) 0%, #4B76BA 41.75%, rgba(75, 118, 186, 0) 94.55%);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.our {
+  padding: 50px 30px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+}
+
+.btn-primary,
+.btn-secondary {
+  color: #5C636A;
+  border: 3px solid #5C636A;
+  background-color: white;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ri-arrow-right-s-line:before {
+  content: "\ea6e";
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+.head-p {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  text-align: left;
+}
+
+font {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* mobile view  start*/
+/* Base styles for the desktop layout */
+.container-body .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .container-body .row {
+    flex-direction: column; /* Stack items vertically for mobile */
+  }
+
+  /* Ensure images always appear before text */
+  .container-body .row:nth-child(odd) .col-md-6:first-child {
+    order: -1; /* Move the image to the top */
+  }
+
+  .container-body .row:nth-child(odd) .col-md-6:last-child {
+    order: 1; /* Text stays below */
+  }
+
+  .container-body .row:nth-child(even) .col-md-6:last-child {
+    order: -1; /* Move the image to the top for even rows */
+  }
+
+  .container-body .row:nth-child(even) .col-md-6:first-child {
+    order: 1; /* Text stays below */
+  }
+
+  /* Optional: Add some spacing for better readability */
+  .container-body .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* mobile view end */
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .our .row {
+    flex-direction: column;
+  }
+
+  .our .row>div:first-child {
+    order: 1;
+  }
+
+  .our .row>div:last-child {
+    order: 2;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section-text {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: justified;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  word-spacing: 3px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+/* General styling */
+.value-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.value-header p {
+  font-size: 1rem;
+}
+
+.value-header h1 {
+  font-size: 2.5rem;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+/* Left Section */
+.left-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Text Styling */
+.child-box-2 p {
+  margin: 0;
+}
+
+.child-box-2 .text-muted {
+  font-size: 0.85rem;
+}
+
+/* Right Section */
+.right-section h5 {
+  font-size: 1.25rem;
+}
+
+.right-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .value-header h1 {
+    font-size: 2rem;
+  }
+
+  .left-section img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .right-section h5 {
+    font-size: 1.1rem;
+  }
+
+  .right-section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .value-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .left-section img {
+    max-width: 120px;
+  }
+
+  .right-section h5 {
+    font-size: 1rem;
+  }
+
+  .right-section p {
+    font-size: 0.85rem;
+  }
+}

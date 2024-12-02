@@ -1,0 +1,121 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 576px) {
+    .bg-image {
+        background-image: url('/assets/images/Hero_mobile1.png');
+        width: 360px;
+        height: 225px;
+        top: 48px;
+        gap: 0px;
+        border: 0px 0px 1px 0px;
+        opacity: 0px;
+
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .bg-image {
+        background-image: url('/assets/images/hero_tablet.png');
+        width: 720px;
+        height: 545px;
+        gap: 0px;
+        border: 0px 0px 1px 0px;
+        opacity: 0px;
+
+    }
+}
+
+@media (min-width: 993px) {
+    .bg-image {
+        background-image: url('/assets/images/Hero-desktop.png');
+        width: 1280px;
+        height: 545px;
+        top: 136px;
+        left: 80px;
+        gap: 0px;
+        border: 0px 0px 1px 0px;
+        opacity: 0px;
+
+    }
+}
+
+/* @media (max-width: 768px) {
+    .bg-image {
+      background-color: red;
+      background-image: url('/assets/images/testimonial1.jpg');
+    }
+  } */
+/* 
+@media (max-width: 300px) {
+    .hero {
+      background-color: red;
+      background-image: url("http://placekitten.com/g/200/300");
+    }
+  }
+  @media (min-width: 301px) and (max-width: 600px) {
+    .hero {
+      background-color: blue;
+      background-image: url("http://placekitten.com/g/400/600");
+    }
+  }
+  @media (min-width: 601px) and (max-width: 768px) {
+    .hero {
+      background-color: yellow;
+      background-image: url("http://placekitten.com/g/500/768");
+    }
+  }
+  @media (min-width: 769px) {
+    .hero {
+      background-color: green;
+      background-image: url("http://placekitten.com/g/800/1048");
+    }
+  }
+
+@media (min-width: 668px) {
+    .hero {
+        background-image: url('/assets/images/Hero1.png');
+        
+    }
+} */
+
+
+@media (max-width: 768px) {
+    .mb-4 {
+        flex-direction: column !important;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+}
+
+.rx {
+    width: 400px;
+    height: 50px;
+}
+
+.d-flex {
+    display: flex !important;
+    justify-content: center;
+}
+
+.btn {
+    min-width: 150px;
+}
+
+@media (min-width: 576px) {
+    .btn[_ngcontent-ng-c1120557030] {
+        width: 30%;
+
+    }
+}
